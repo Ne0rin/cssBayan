@@ -1,7 +1,5 @@
-
-
 body {
-    font-family: "Times New Roman", Times, serif;
+    font-family: "Times New Roman", sans-serif;
     font-weight: bold;
     display: flex;
     flex-direction: column;
@@ -11,7 +9,7 @@ body {
 }
 
 
-@media (min-width: 320px) and (min-height: 568px)  {
+@media (min-width: 320px) and (min-height: 568px) {
     .main-container {
         font-weight: bold;
         width: 80%;
@@ -30,16 +28,10 @@ body {
     }
 
     .header-container h1 {
-        font-family: "Times New Roman", Times, serif;
+        font-family: "Times New Roman", sans-serif;
         font-weight: bold;
         font-size: 1em;
         margin-bottom: 0.8em;
-    }
-
-    .header-container hr {
-        color: black; 
-        border: none;
-        height: 1em;
     }
 
     .accordion {
@@ -77,7 +69,7 @@ body {
         height: 2em;
         width: 100%;
         align-items: center;
-        justify-self: space-between;
+        justify-content: space-between;
     }
 
     .memes-label .title {
@@ -95,6 +87,7 @@ body {
         background-image: url("./icons/icon.png");
         background-size: 1.3em 1.3em;
         transition: all 0.3s linear;
+        transform: rotate(45deg);
     }
 
     .img-wrapper {
@@ -106,8 +99,9 @@ body {
         transition: all 0.6s linear;
     }
 
-    .images {
+    .images_s {
         opacity: 0;
+        width: 50%;
         transition: all 0.6s linear;
     }
 
@@ -120,14 +114,13 @@ body {
         opacity: 1;
     }
 
-    .memes-input:checked~.memes-label .title {
+    .memes-input:checked .memes-label .title {
         color:rgb(0, 0, 0)
     }
 
     .memes-input:checked~.memes-label .icon {
         transform: rotate(0deg);
     }
-
 
 }
 
@@ -174,8 +167,8 @@ body {
         height: 5.5em;
     }
 
-    .images {
-        width: 90%;
+    .images_s {
+        width: 50%;
         cursor: pointer;
     }
 
